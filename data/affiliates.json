@@ -1,0 +1,15 @@
+{
+  "affiliate_tag": "rubenfromla-20",
+  "products": [
+    {"id": "kettlebell", "name": "Kettlebell (20lb)", "url": "https://amazon.com/Yes4All-Kettlebell-Weights-Available-Strength/dp/B0061ZLTYY?tag=rubenfromla-20", "price": "$25-35", "reviews": 1200},
+    {"id": "dumbbells", "name": "Adjustable Dumbbells (5-50lb)", "url": "https://amazon.com/Adjustable-Dumbbells-Weight-Strength-Training/dp/B0C1L9W69C?tag=rubenfromla-20", "price": "$150-200", "reviews": 850},
+    {"id": "resistance_bands", "name": "Resistance Bands Set", "url": "https://amazon.com/Resistance-Training-Exercise-Fitness-Mobility/dp/B07WDVVDQW?tag=rubenfromla-20", "price": "$20-30", "reviews": 2100},
+    {"id": "yoga_mat", "name": "Yoga Mat (6mm)", "url": "https://amazon.com/Yoga-Exercise-Mat-Carrying-Strap/dp/B08CJBBY9X?tag=rubenfromla-20", "price": "$25-35", "reviews": 3500},
+    {"id": "pull_up_bar", "name": "Doorway Pull-Up Bar", "url": "https://amazon.com/Pull-Up-Doorway-Exercise-Strength-Training/dp/B07GBFHX6Z?tag=rubenfromla-20", "price": "$30-45", "reviews": 2800},
+    {"id": "foam_roller", "name": "High-Density Foam Roller", "url": "https://amazon.com/High-Density-Foam-Roller-Muscle-Recovery/dp/B07KVXNK9J?tag=rubenfromla-20", "price": "$15-25", "reviews": 1950},
+    {"id": "weight_bench", "name": "Adjustable Weight Bench", "url": "https://amazon.com/Adjustable-Weight-Bench-Strength-Training/dp/B08XXFV89J?tag=rubenfromla-20", "price": "$80-120", "reviews": 2200},
+    {"id": "jump_rope", "name": "Jump Rope", "url": "https://amazon.com/Jump-Rope-Cardio-Training-Fitness/dp/B01N3V1E5B?tag=rubenfromla-20", "price": "$15-25", "reviews": 1800},
+    {"id": "medicine_ball", "name": "Medicine Ball (8-10 lb)", "url": "https://amazon.com/Medicine-Ball-Core-Strength-Training/dp/B08CZ3BYYT?tag=rubenfromla-20", "price": "$30-40", "reviews": 950},
+    {"id": "resistance_band_anchor", "name": "Resistance Band Door Anchor", "url": "https://amazon.com/Resistance-Band-Anchor-Door-Attachment/dp/B07NXN9MZZ?tag=rubenfromla-20", "price": "$10-15", "reviews": 1200}
+  ]
+}
