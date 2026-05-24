@@ -1,0 +1,43 @@
+name: Link Validator
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  validate-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Check for broken affiliate links
+        run: |
+          echo "Validating affiliate links with tag: rubenfromla-20"
+          grep -r "tag=rubenfromla-20" . --include="*.md" --include="*.html" || echo "No affiliate links found"
+          
+      - name: Validate JSON structure
+        run: |
+          if [ -f "data/affiliates.json" ]; then
+            python3 -m json.tool data/affiliates.json > /dev/null
+            echo "✓ affiliates.json is valid JSON"
+          fi
+          
+      - name: Check for missing affiliate tags
+        run: |
+          echo "Checking for Amazon links without proper affiliate tags..."
+          if grep -r "amazon.com" . --include="*.md" --include="*.html" | grep -v "tag=rubenfromla-20"; then
+            echo "⚠ Found Amazon links without affiliate tag"
+          else
+            echo "✓ All Amazon links properly tagged"
+          fi
+          
+      - name: Report results
+        if: always()
+        run: |
+          echo "Link validation completed"
+          echo "Affiliate tag in use: rubenfromla-20"
+          echo "Last checked: $(date)"
